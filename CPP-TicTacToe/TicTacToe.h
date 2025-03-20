@@ -6,7 +6,6 @@ private:
 	std::string m_board = "123456789";
 	char m_turn = 'X';
 	int m_turnCount = 1;
-	bool m_running = true;
 public:
 	bool IsGameOver() const;
 	void TakeTurn();
@@ -18,6 +17,4 @@ public:
 	void SetTurn(const char turn) { m_turn = turn; }
 	int GetCount() const { return m_turnCount; }
 	void SetCount(const int count) { m_turnCount = count; }
-	bool GetRunning() const { return m_running; }
-	bool SetRunning() { m_running = !m_running; }
 };
